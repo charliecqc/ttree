@@ -1,0 +1,1 @@
+/usr/bin/cc  -O3    CMakeFiles/t_cursor_move.dir/t_cursor_move.c.o CMakeFiles/t_cursor_move.dir/utils.c.o  -o t_cursor_move  -L/home/qyt/ttree -rdynamic ../../libttree.a libutest.so -Wl,-rpath,/home/qyt/ttree:/home/qyt/ttree/tests/unit 

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qyt/ttree/tests/unit/utest.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+errno.h
+-
+stdarg.h
+-
+utest.h
+/home/qyt/ttree/tests/unit/utest.h
+
+/home/qyt/ttree/tests/unit/utest.h
+stdarg.h
+-
+stdbool.h
+-
+

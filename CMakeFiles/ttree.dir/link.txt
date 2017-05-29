@@ -1,0 +1,2 @@
+/usr/bin/ar cr libttree.a  CMakeFiles/ttree.dir/ttree.c.o
+/usr/bin/ranlib libttree.a

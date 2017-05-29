@@ -1,0 +1,1 @@
+/usr/bin/cc  -O3    CMakeFiles/t_lookup.dir/t_lookup.c.o CMakeFiles/t_lookup.dir/utils.c.o  -o t_lookup  -L/home/qyt/ttree -rdynamic ../../libttree.a libutest.so -Wl,-rpath,/home/qyt/ttree:/home/qyt/ttree/tests/unit 

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qyt/ttree/ttree.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+stdint.h
+-
+errno.h
+-
+sys/types.h
+-
+ttree.h
+/home/qyt/ttree/ttree.h
+
+/home/qyt/ttree/ttree.h
+stdint.h
+-
+stdbool.h
+-
+sys/types.h
+-
+ttree_defs.h
+/home/qyt/ttree/ttree_defs.h
+
+/home/qyt/ttree/ttree_defs.h
+assert.h
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/cc  -O3    CMakeFiles/t_init.dir/t_init.c.o CMakeFiles/t_init.dir/utils.c.o  -o t_init  -L/home/qyt/ttree -rdynamic ../../libttree.a libutest.so -Wl,-rpath,/home/qyt/ttree:/home/qyt/ttree/tests/unit 
