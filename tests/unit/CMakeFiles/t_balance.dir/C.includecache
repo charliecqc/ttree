@@ -42,15 +42,3 @@ stdarg.h
 stdbool.h
 -
 
-/home/qyt/ttree/tests/unit/utils.c
-stdio.h
--
-stdarg.h
--
-errno.h
--
-ttree.h
-/home/qyt/ttree/tests/unit/ttree.h
-test_utils.h
-/home/qyt/ttree/tests/unit/test_utils.h
-

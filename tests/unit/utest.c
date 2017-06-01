@@ -38,7 +38,7 @@ static char *appname = NULL;
 static struct test_case *test_cases = NULL;
 
 void utest_error(const char *fmt, ...)
-{
+
     va_list ap;
     int err = errno;
 

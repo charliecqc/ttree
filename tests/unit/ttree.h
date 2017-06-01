@@ -97,7 +97,7 @@ enum ttree_cursor_state {
  */
 typedef struct ttree_node {
     struct ttree_node *parent;     /**< Pointer to node's parent */
-    struct ttree_node *successor;  /**< Pointer to node's soccussor */
+    struct ttree_node *successor;  /**< Pointer to node's soccussor 是寻找最小的后继结点，如果有右子树的话就是右子树最小的结点，如果没有右子树就在父亲结点进行寻找，前提是这个结点是父亲结点的左子树。之后就可以在父亲结点中找到最小的数 */
     union {
         struct ttree_node *sides[2];
         struct  {
@@ -110,7 +110,7 @@ typedef struct ttree_node {
         struct {
             signed min_idx     :12;  /**< Index of minimum item in node's array */
             signed max_idx     :12;  /**< Index of maximum item in node's array */
-            signed bfc         :4;   /**< Node's balance factor */
+            signed bfc         :4;   /**< Node's balance factor 平衡因子=右子树高度-左子树高度。在平衡树中正常的值是1,0,-1。如果是不是这三个值的话需要重新进行排序。*/
             unsigned node_side :4;  /**< Node's side(TNODE_LEFT, TNODE_RIGHT or TNODE_ROOT) */
         };
     };
@@ -130,7 +130,7 @@ typedef void (*ttree_callback_fn)(TtreeNode *tnode, void *arg);
 typedef struct ttree {
     TtreeNode *root;            /**< A pointer to T*-tree root node */
     ttree_cmp_func_fn cmp_func; /**< User-defined key comparing function */
-    size_t key_offs;            /**< Offset from item to its key(may be 0) */
+    size_t key_offs;            /**< size_t=usigned int;定义在stdio.h中  Offset from item to its key(may be 0) */
     int keys_per_tnode;         /**< Number of keys per each T*-tree node */
 
     /**
